@@ -29,7 +29,7 @@ def _finalize_payloads(
     Updates payloads setting required non-specific values on data.
     """
     extra_payload = {
-        'v': '1', 'tid': tracking_id, 'cid': client_id, 'aip': '1'}
+        'v': '1', 'tid': tracking_id, 'uid': client_id, 'aip': '1'}
 
     for payload in payloads:
         final_payload = dict(payload)
